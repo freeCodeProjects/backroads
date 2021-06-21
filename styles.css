@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+* {
+  padding   : 0;
+  margin    : 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color            : #ff6000;
+  --main-color-dark       : #FF5400;
+  --main-color-extra-dark : #FF4800;
+  --main-color-light      : #FF7900;
+  --main-color-extra-light: #FF9E00;
+  --s-screen-width        : 576px;
+  --m-screen-width        : 768px;
+  --l-screen-width        : 992px;
+  --xl-screen-width       : 1200px;
+  --text-color            : #a5a58d;
+}
+
+html,
+body {
+  font-size         : 62.5%;
+  font-family       : 'Poppins', sans-serif;
+  font-weight       : 300;
+  width             : 100%;
+  scroll-padding-top: 6em;
+  scroll-behavior   : smooth;
+}
+
+.container {
+  width          : min(86vw, 1440px);
+  display        : inherit;
+  align-items    : inherit;
+  justify-content: inherit;
+  flex-direction : inherit;
+  margin         : auto;
+}
+
+a {
+  color          : inherit;
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.section-heading {
+  font-size     : 4rem;
+  font-weight   : 500;
+  text-transform: uppercase;
+  padding-bottom: 3rem;
+}
+
+.section-heading span:nth-child(2) {
+  margin-left: .5rem;
+  color      : var(--main-color);
+}
+
+.header {
+  height          : 6rem;
+  box-shadow      : 0px 2px 5px 0px rgba(0, 0, 0, .5);
+  display         : flex;
+  align-items     : center;
+  position        : fixed;
+  width           : 100%;
+  background-color: white;
+  z-index         : 1;
+}
+
+.navbar {
+  display        : flex;
+  justify-content: space-between;
+  width          : 100%;
+  margin-left    : 8rem;
+  align-items    : center;
+}
+
+.navbar__link {
+  font-size : min(2vw, 2.4rem);
+  color     : var(--text-color);
+  margin    : 0 0.5rem;
+  padding   : .125em .25em;
+  position  : relative;
+  transition: color .25s ease-in;
+}
+
+.navbar__link:hover {
+  color: var(--main-color);
+}
+
+.navbar__link::before {
+  content      : '';
+  position     : absolute;
+  border-bottom: 3px solid var(--main-color);
+  bottom       : 0;
+  left         : .0125em;
+  width        : 0%;
+  transform    : translateX(0);
+  transition   : transform .25s ease-in, width .25s ease-in;
+}
+
+.navbar__link:hover:before {
+  width    : 100%;
+  transform: translateX(1);
+}
+
+.navbar__social-link {
+  font-size : 2.4rem;
+  margin    : .5rem;
+  color     : var(--main-color);
+  transition: color 0.3s ease-in;
+}
+
+.navbar__social-link:hover {
+  font-size: min(2vw, 2.4rem);
+  margin   : 0 .5rem;
+  color    : var(--main-color-extra-light);
+  cursor   : pointer;
+}
+
+.navbar-control {
+  display: none;
+}
+
+.logo {
+  height: 4rem;
+}
+
+.home {
+  height         : 100vh;
+  background     : linear-gradient(to right, #ff6f0088, #ff480080), url(./images/main.jpeg) no-repeat;
+  background-size: cover;
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items    : center;
+  color          : white;
+}
+
+.home__tagline {
+  font-size     : clamp(3.6rem, 8vw, 6.4rem);
+  font-weight   : 400;
+  text-transform: uppercase;
+  text-align    : center;
+  margin        : 0 1rem;
+}
+
+.home__subtagline {
+  font-size : clamp(1.2rem, 2vw, 2rem);
+  font-style: italic;
+  width     : min(90vw, 600px);
+  text-align: center;
+}
+
+.home__btn {
+  text-decoration : none;
+  margin          : 1rem;
+  font-size       : clamp(2rem, 1.8vw, 4rem);
+  text-transform  : uppercase;
+  padding         : 0.25em 1em;
+  border          : 3px solid white;
+  color           : var(--main-color);
+  background-color: white;
+  font-weight     : 300;
+  transition      : color 0.3s ease-out, background-color 0.3s ease;
+}
+
+.home__btn:hover {
+  cursor          : pointer;
+  color           : white;
+  background-color: transparent;
+}
+
+.about {
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items    : center;
+  padding        : 6rem 0;
+}
+
+.about__content {
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: center;
+}
+
+.about__content__image {
+  height: clamp(36rem, 46vh, 84rem);
+  width : clamp(40rem, 46vw, 96rem);
+}
