@@ -14,7 +14,7 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="container">
+			<div class="container header__content">
 				<img
 					class="logo"
 					src="./images/backroads-logo.png"
@@ -48,78 +48,101 @@
 			<a class="home__btn" href="#featured">Explore Tours</a>
 		</main>
 		<section id="about" class="about">
-			<div class="container">
-				<h2 class="section-heading"><span>about</span> <span>us</span></h2>
-				<article class="about__content">
-					<img
-						class="about__content__image"
-						src="./images/about.jpeg"
-						alt="image of sea shore"
-					/>
-					<div>
+			<div class="container about__content">
+				<h2 class="section-heading"><span>about</span><span>us</span></h2>
+				<article class="about-content">
+					<div class="about-content__image">
+						<img src="./images/about.jpeg" alt="image of sea shore" />
+					</div>
+					<div class="about-content__data">
 						<h2>Explore The Diffrence</h2>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-							sunt, accusantium magni rem ducimus repudiandae at neque ab
-							officia corporis nam nihil, ea nobis similique id pariatur. Ullam,
-							corrupti qui.
+							sunt, accusantium magni rem ducimus repudiandae.
 						</p>
 						<p>
 							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
 							deserunt ipsum corrupti magnam, et alias voluptatem maiores veniam
-							ad accusantium. Veritatis enim consequatur placeat dolorem atque
-							blanditiis quaerat assumenda quas.
+							ad accusantium.
 						</p>
-						<button>read more</button>
+						<button class="btn">read more</button>
 					</div>
 				</article>
 			</div>
 		</section>
 		<section id="services" class="services">
-			<h2 class="section-heading"><span>our</span><span>services</span></h2>
-			<div>
-				<article>
-					<div>
-						<i class="fas fa-wallet"></i>
-					</div>
-					<div>
-						<h3>Saving Money</h3>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Asperiores, officia.
-						</p>
-					</div>
-				</article>
+			<div class="container services__content">
+				<h2 class="section-heading"><span>our</span><span>services</span></h2>
+				<div class="services-list">
+					<article class="service">
+						<div class="service__icon">
+							<i class="fas fa-wallet"></i>
+						</div>
+						<div class="service__info">
+							<h2>Saving Money</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Asperiores, officia.
+							</p>
+						</div>
+					</article>
+					<article class="service">
+						<div class="service__icon">
+							<i class="fas fa-tree"></i>
+						</div>
+						<div class="service__info">
+							<h2>Endless Hiking</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Asperiores, officia.
+							</p>
+						</div>
+					</article>
+					<article class="service">
+						<div class="service__icon">
+							<i class="fas fa-socks"></i>
+						</div>
+						<div class="service__info">
+							<h2>Amazing Comfort</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Asperiores, officia.
+							</p>
+						</div>
+					</article>
+				</div>
 			</div>
 		</section>
 		<section id="featured" class="featured">
-			<h2 class="section-heading"><span>featured</span><span>tours</span></h2>
 			<div>
-				<article>
-					<div>
-						<img src="./images/tour-1.jpeg" alt="image from tibet" />
-						<span>August 26, 2020</span>
-					</div>
-					<div>
-						<h3>Tibet Adventure</h3>
-						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
-							assumenda eveniet debitis culpa dignissimos atque quidem nobis
-							impedit magnam maiores temporibus error, hic ullam facilis vero
-							veniam quaerat repellat dolor?
-						</p>
+				<h2 class="section-heading"><span>featured</span><span>tours</span></h2>
+				<div>
+					<article>
 						<div>
-							<div>
-								<i class="fas fa-map-marked-alt"></i>
-								<span>China</span>
-							</div>
-							<div>11 days</div>
-							<div>From $2100</div>
+							<img src="./images/tour-1.jpeg" alt="image from tibet" />
+							<span>August 26, 2020</span>
 						</div>
-					</div>
-				</article>
+						<div>
+							<h3>Tibet Adventure</h3>
+							<p>
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+								assumenda eveniet debitis culpa dignissimos atque quidem nobis
+								impedit magnam maiores temporibus error, hic ullam facilis vero
+								veniam quaerat repellat dolor?
+							</p>
+							<div>
+								<div>
+									<i class="fas fa-map-marked-alt"></i>
+									<span>China</span>
+								</div>
+								<div>11 days</div>
+								<div>From $2100</div>
+							</div>
+						</div>
+					</article>
+				</div>
+				<button class="btn">All tours</button>
 			</div>
-			<button>All tours</button>
 		</section>
 		<section id="gallery" class="gallery">
 			<div>
