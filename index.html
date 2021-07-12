@@ -14,12 +14,17 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="container header__content">
-				<img
-					class="logo"
-					src="./images/backroads-logo.png"
-					alt="website logo"
-				/>
+			<div class="header__content">
+				<div class="header__title">
+					<img
+						class="logo"
+						src="./images/backroads-logo.png"
+						alt="website logo"
+					/>
+					<div class="navbar-control" onclick="toggleNavbar()">
+						<span></span><span></span><span></span>
+					</div>
+				</div>
 				<nav class="navbar">
 					<div class="navbar__links">
 						<a class="navbar__link" href="#home">Home</a>
@@ -34,9 +39,6 @@
 						<i class="navbar__social-link fab fa-instagram"></i>
 					</div>
 				</nav>
-				<div class="navbar-control">
-					<span></span><span></span><span></span>
-				</div>
 			</div>
 		</header>
 		<main id="home" class="home">
@@ -278,5 +280,7 @@
 				</p>
 			</section>
 		</footer>
+
+		<script src="./script.js"></script>
 	</body>
 </html>
