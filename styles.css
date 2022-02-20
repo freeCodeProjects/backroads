@@ -291,6 +291,9 @@ a:active {
 .services {
   padding         : 8rem;
   background-color: #FFEDD6;
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
 }
 
 .services__content {
@@ -298,7 +301,6 @@ a:active {
   justify-items : center;
   align-items   : center;
   flex-direction: column;
-  width         : 100%;
 }
 
 .services-list {
